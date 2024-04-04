@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## 🎙️ Voice-to-Text ChatGPT: Transcribe with Whisper API 🚀
 
 Elevate your ChatGPT experience with [Voice-to-Text ChatGPT chrome extension](https://chrome.google.com/webstore/detail/whisper-to-chatgpt/jdmppbmnffdfhjlddebcelhigiomacfl?hl=ru&authuser=0)! Seamlessly record your voice and transcribe it using OpenAI's Whisper API - all within your Chrome browser. Just click, record, and transcribe! 🎉
@@ -47,3 +48,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 1. `npm start` : Runs the app in development mode, open http://localhost:3000 to view it in your browser
 2. `npm run build` : Builds the app for production to the build folder
 For more information, refer to the [Create React App documentation](https://create-react-app.dev/docs/getting-started/) and [React documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+=======
+# newsletter3
+newsletter3 dynamic
+>>>>>>> 6a65e27fcb0ea1eb8ce5ca7f1b3674fadb871360
