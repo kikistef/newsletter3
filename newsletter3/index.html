@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChatGPT Conversation</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+.conversation {
+    max-width: 700px;
+    margin: 20px auto;
+    background-color: #333; /* Slightly lighter dark for contrast */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.message p {
+    margin: 0;
+    padding-left: 10px;
+}
+.message {
+    border-radius: 50%;
+    align-items: center;
+    justify-content: left;
+}
+.text-icon-container {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+.chatgpt img:hover + .text-icon-container {
+    transform: translateX(-200px); /* Moves the text and icon to the left */
+    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+.text-icon-container {
+    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+    display: flex;
+    align-items: center;
+    position: absolute; /* To ensure the transform property works */
+    left: 0; /* Start from 0 position */
+    width: 400px;
+	background: rgba(0,0,0,0.5);
+	padding:20px;
+	border-radius: 10px;
+	backdrop-filter: blur(10px);
+}
+.message:hover {
+    transform: none;
+}
+.message {
+    transform: translateX(0); /* Ensures the message returns to its original position */
+    transition: transform 0.3s ease; /* Smooth transition for when the mouse leaves the element */
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative; /* Allows absolute positioning for children relative to this parent */
+}
+.user .icon {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+}
+.chatgpt .icon {
+    background-color: red;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.icon {
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    white-space: nowrap;
+    margin-right: 10px; /* Add space between the icon and text */
+}
+.chatgpt .icon img {
+    position: relative;
+    width: 21px; /* Slightly smaller to ensure it fits well inside the circle */
+    height: 21px;
+    left: -5px;
+    top: -6px;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(0) invert(1);
+}
+.message {
+    /* Set the width as requested */
+    width: 600px;
+}
+img {
+    width: 400px;
+    height: auto; /* Adjust height automatically */
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.imageStyle {
+    position: relative;
+    display: flex;
+    left: 290px;
+}
+</style>
+</head>
+<body>
+<div class="conversation">
+  <div class="message user"> <span class="icon"></span>
+    <p>J'aimerais que tu puisses me réaliser un avatar représentant un garagiste sur un écran montrant comment on démonte une roue.</p>
+  </div>
+  <div class="message chatgpt"> <img class="imageStyle" src="images/DALLmechanic001.png" alt="Avatar garagiste style Pixar">
+    <div class="text-icon-container"> <!-- New container for text and icon --> 
+      <span class="icon"> <img src="images/ChatGPT.svg" alt="ChatGPT Icon" /> </span>
+      <p>Voici l'avatar que j'ai créé, inspiré par le style Pixar, représentant un garagiste professionnel.</p>
+    </div>
+  </div>
+  <div class="message user"> <span class="icon"></span>
+    <p>Peux-tu me faire exactement le même mais avec un style plus 3D Pixar ?</p>
+  </div>
+  <div class="message chatgpt"> <img class="imageStyle"  src="images/DALLmechanic002.png" alt="Avatar garagiste style 3D Pixar">
+    <div class="text-icon-container"> <!-- New container for text and icon --> 
+      <span class="icon"> <img src="images/ChatGPT.svg" alt="ChatGPT Icon" /> </span>
+      <p>Certainement, voici une version avec un style 3D plus prononcé, toujours dans l'esprit Pixar.</p>
+    </div>
+  </div>
+  <div class="message user"> <span class="icon"></span>
+    <p>La même chose mais avec un avatar ayant une tête d'animal.</p>
+  </div>
+  <div class="message chatgpt"> <img class="imageStyle"  src="images/DALLmechanic004.png" alt="Avatar avec tête d'animal style Pixar">
+    <div class="text-icon-container"> <!-- New container for text and icon --> 
+      <span class="icon"> <img src="images/ChatGPT.svg" alt="ChatGPT Icon" /> </span>
+      <p>Voici votre avatar adapté avec une tête d'animal, tout en conservant le style professionnel Pixar.</p>
+    </div>
+  </div>
+  <div class="message user"> <span class="icon"></span>
+    <p>Et maintenant, fais-le avec une tête de rhinocéros.</p>
+  </div>
+  <div class="message chatgpt"> <img class="imageStyle"  src="images/DALLmechanic005.png" alt="Avatar tête de rhinocéros style Pixar">
+    <div class="text-icon-container"> <!-- New container for text and icon --> 
+      <span class="icon"> <img src="images/ChatGPT.svg" alt="ChatGPT Icon" /> </span>
+      <p>Comme demandé, voici l'avatar avec une tête de rhinocéros, dans le style Pixar souhaité.</p>
+    </div>
+  </div>
+  <div class="message user"> <span class="icon"> <img src="images/ChatGPT.svg" alt="ChatGPT Icon" /> </span>
+    <p>Peux-tu le rendre plus mignon, et plus dans le style de Pixar défini précédemment ?</p>
+  </div>
+  <div class="message chatgpt"> <img class="imageStyle"  src="images/DALLmechanic006.png" alt="Avatar plus mignon style Pixar">
+    <div class="text-icon-container"> <!-- New container for text and icon --> 
+      <span class="icon"> <img src="images/ChatGPT.svg" alt="ChatGPT Icon" /> </span>
+      <p>Absolument, j'ai rendu l'avatar plus mignon en affinant le style Pixar comme souhaité.</p>
+    </div>
+  </div>
+  <div class="message user"> <span class="icon"></span>
+    <p>Avec une corne plus petite et arrondie au bout.</p>
+  </div>
+  <div class="message chatgpt"> <img class="imageStyle"  src="images/DALLmechanic007.png" alt="Avatar corne plus petite et arrondie">
+    <div class="text-icon-container"> <!-- New container for text and icon --> 
+      <span class="icon"> <img src="images/ChatGPT.svg" alt="ChatGPT Icon" /> </span>
+      <p>J'ai ajusté la corne pour qu'elle soit plus petite et arrondie, comme demandé.</p>
+    </div>
+  </div>
+  <div class="message user"> <span class="icon"></span>
+    <p>Encore plus petit, s'il te plaît.</p>
+  </div>
+  <div class="message chatgpt"> <img class="imageStyle"  src="images/DALLmechanic008.png" alt="Avatar avec corne encore plus petite">
+    <div class="text-icon-container"> <span class="icon"> <!-- New container for text and icon --> 
+      <img src="images/ChatGPT.svg" alt="ChatGPT Icon" /> </span>
+      <p>La corne a été réduite encore davantage, pour un look encore plus mignon.</p>
+    </div>
+  </div>
+  <div class="message user"> <span class="icon"></span>
+    <p>Peux-tu maintenant retirer complètement la corne ?</p>
+  </div>
+  <div class="message chatgpt"> <img class="imageStyle"  src="images/DALLmechanic009.png" alt="Avatar sans corne">
+    <div class="text-icon-container"> <!-- New container for text and icon --> 
+      <span class="icon"> <img src="images/ChatGPT.svg" alt="ChatGPT Icon" /> </span>
+      <p>Comme demandé, voici l'avatar sans la corne, pour un aspect lisse.</p>
+    </div>
+  </div>
+  <!-- Add any additional exchanges using the same pattern --> 
+</div>
+</body>
+</html>
