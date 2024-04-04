@@ -1,0 +1,6 @@
+# Ignore everything
+*
+
+# But not the newsletter2 directory and its subdirectories/files
+!/newsletter3/
+!/newsletter3/**/*
